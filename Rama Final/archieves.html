@@ -1,0 +1,118 @@
+<html>
+<title>
+Archieve page
+</title>
+<head>
+<link rel="stylesheet" type="text/css" href="ramaFinal.css"/>
+<div class="header2">
+<h1>Nebula Customs</h1>
+<h3>Archive</h3>
+</div>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="archieves.html">Archive</a>
+  <a href="services.html">Services</a>
+    <input type="text" placeholder="Search..">
+
+</div>
+<br><br>
+<div class="slideshow-container">
+
+  <!-- pictures -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="https://i.ytimg.com/vi/qqFOsMZMXpM/maxresdefault.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="https://i.pinimg.com/736x/07/50/b1/0750b14d2216908417fcee4d725e506b--custom-computers-custom-pc.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="http://www.buyrealpinterestfollowers.com/wp-content/uploads/2017/08/Unique-Cool-Custom-Computers-42-For-House-Decorating-Ideas-with-Cool-Custom-Computers.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="http://cdn.ebaumsworld.com/mediaFiles/picture/2196124/82233573.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="http://emergencycashloan.info/wp-content/uploads/customize-pc-desktop-best-25-custom-computers-ideas-on-pinterest-custom-gaming.jpg" style="width:75%">
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- dots-->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += "active";
+}
+</script>
+
+
+<div class="row">
+
+<div class="column middle">
+ 
+<h2> Past Builds</h2>
+<hr><br>
+<div class="itemsA">
+<img src="http://cdn.ebaumsworld.com/mediaFiles/picture/2196124/82233589.jpg" style="width:100%">
+<p>Build Price: 2400$</p>
+
+<hr>
+<img src="https://imagescdn.tweaktown.com/news/4/6/46993_03_check-drool-worthy-custom-minecraft-pc.jpg" style="width:100%">
+<p>Build Price: 1548$</p>
+
+</div>
+</div>
+
+
+
+</body>
+
+</html>
