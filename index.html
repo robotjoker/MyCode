@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<title>
+Tiana Smith Final
+</title>
+<head>
+<link rel="stylesheet" type="text/css" href="ramaFinal.css"/>
+<div class="header">
+<h1>Nebula Customs</h1>
+<h3>"Making Custom Computers out of this World!</h3>
+</div>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="archieves.html">Archive</a>
+  <a href="services.html">Services</a>
+<div class="search-container">
+      <input type="text" placeholder="Search.." name="search">
+    
+  </div>
+  </div>
+<br><br>
+<div class="slideshow-container">
+
+  <!-- pictures -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="comp5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="comp1.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="comp6.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="comp7.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="comp8.jpg" style="width:75%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- dots -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="row">
+<div class="column side">
+
+
+<h2>Promotions/ News</h2>
+<hr>
+<ul>
+<li> <a href="https://www.pinterest.com/pin/355080751848097026/">Monster Build</a></li>
+<ul>
+<li>All Green Builds 20% off!</li>
+</ul>
+<br>
+<li>Buy 16gb RAM, Get 8gb FREE!</li>
+<br>
+<li> New 1200W Power Supplies Coming Soon!</li>
+</ul>
+</div>
+
+
+
+<div class="column middle">
+ 
+<h2> New Items</h2>
+<hr>
+<div class="itemsI">
+<img src="https://img.purch.com/r/340x200/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9VL0kvNzYzMTQ2L29yaWdpbmFsL0RhcmstUm9jay00LUVjb21tLnBuZw== " style="width:100%">
+<p>75$</p>
+<hr><br>
+<img src="https://thumbor.forbes.com/thumbor/960x0/smart/https%3A%2F%2Fblogs-images.forbes.com%2Fantonyleather%2Ffiles%2F2017%2F06%2Fryzen-5-1600-1200x800.jpg" style="width:100%">
+<p>180$</p>
+</div>
+</div>
+<div class="column side">
+
+<h2>Subscribe</h2>
+<hr><br>
+<form action="/action_page.php">
+  First/Last name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Email:<br>
+  <input type="text" name="lastname">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
